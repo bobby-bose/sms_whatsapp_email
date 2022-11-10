@@ -31,14 +31,14 @@ def make_call(request):
 
     # Find your Account SID and Auth Token at twilio.com/console
     # and set the environment variables. See http://twil.io/secure
-    account_sid = 'ACb2e5c320c3f02b2d7f1b973d305827fb'
-    auth_token = '20ebfc31c4762143596a4369548f9f8f'
+    account_sid = 'ACb2e5c320c3f02b2d7f1b973d305*****'
+    auth_token = '20ebfc31c4762143596a4369548*****'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
         .create(
         body='This is the ship that made the Kessel Run in fourteen parsecs?',
-        from_='+12183047576',
+        from_='+**************',
         to='+917012085349'
     )
 
